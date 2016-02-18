@@ -1,0 +1,14 @@
+{
+  "name": "ng-clustered-map",
+  "homepage": "https://github.com/arnauddri/ng-clustered-map",
+  "_release": "67df8ffd4d",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "67df8ffd4ddd327de69fbd7cfcb8a305d290ad14"
+  },
+  "_source": "git://github.com/arnauddri/ng-clustered-map.git",
+  "_target": "*",
+  "_originalSource": "ng-clustered-map",
+  "_direct": true
+}

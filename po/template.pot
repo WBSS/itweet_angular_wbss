@@ -1,0 +1,572 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: \n"
+
+#: src/rhb/attributeTime/attributeTime.html:30
+msgid "H"
+msgstr ""
+
+#: src/rhb/attributeInvolvedPersons/attributeInvolvedPersons.html:28
+msgid "Hinzufügen"
+msgstr ""
+
+#: src/rhb/attributeTime/attributeTime.html:22
+msgid "J"
+msgstr ""
+
+#: src/rhb/attributeTime/attributeTime.html:16
+msgid "M"
+msgstr ""
+
+#: src/rhb/attributeTime/attributeTime.html:36
+msgid "Min"
+msgstr ""
+
+#: src/rhb/attributeTime/attributeTime.html:10
+msgid "T"
+msgstr ""
+
+#: src/register/register.html:22
+msgid "This does not work"
+msgstr ""
+
+#: src/rhb/location/location.html:63
+msgid "Weiter"
+msgstr ""
+
+#: build/ts.js:3597
+msgid "attribute_error_user_already_added"
+msgstr ""
+
+#: src/rhb/attributeInvolvedPersons/attributeInvolvedPersons.html:53
+msgid "attribute_involvedPersons_button_skip"
+msgstr ""
+
+#: src/rhb/attributeInvolvedPersons/attributeInvolvedPersons.html:3
+msgid "attribute_involvedPersons_subtitle"
+msgstr ""
+
+#: src/rhb/attributeInvolvedPersons/attributeInvolvedPersons.html:6
+msgid "attribute_involvedPersons_text"
+msgstr ""
+
+#: src/rhb/attributeTime/attributeTime.html:43
+msgid "attribute_time_invalid_date"
+msgstr ""
+
+#: src/rhb/attributeTime/attributeTime.html:3
+msgid "attribute_time_subheader"
+msgstr ""
+
+#: build/ts.js:3546
+#: src/overview/overview.html:73
+msgid "attribute_title_involvedPersons"
+msgstr ""
+
+#: build/ts.js:3721
+#: src/overview/overview.html:41
+msgid "attribute_title_time"
+msgstr ""
+
+#: build/ts.js:3795
+#: src/overview/overview.html:88
+msgid "attribute_title_train"
+msgstr ""
+
+#: src/rhb/attributeTrain/attributeTrain.html:3
+#: src/rhb/location/location.html:4
+msgid "attribute_train_subheader"
+msgstr ""
+
+#: build/ts.js:1354
+#: build/ts.js:3157
+#: src/overview/overview.html:28
+msgid "category_title"
+msgstr ""
+
+#: src/context/context.html:3
+msgid "context_subtitle"
+msgstr ""
+
+#: build/ts.js:1284
+msgid "context_title"
+msgstr ""
+
+#: src/settings/disclaimer.html:3
+msgid "disclaimer_subtitle"
+msgstr ""
+
+#: src/settings/disclaimer.html:7
+msgid "disclaimer_text"
+msgstr ""
+
+#: src/settings/disclaimer.html:6
+msgid "disclaimer_text_title"
+msgstr ""
+
+#: build/ts.js:219
+msgid "disclaimer_title"
+msgstr ""
+
+#: build/ts.js:112
+#: build/ts.js:300
+msgid "error_html5_container_loading_title"
+msgstr ""
+
+#: build/ts.js:268
+msgid "error_html5_container_timeout"
+msgstr ""
+
+#: build/ts.js:131
+#: build/ts.js:149
+#: build/ts.js:1694
+#: build/ts.js:1714
+#: build/ts.js:1737
+#: build/ts.js:1753
+#: build/ts.js:302
+#: build/ts.js:3613
+#: build/ts.js:732
+#: build/ts.js:824
+#: src/app/progress_dialog.tpl.html:16
+msgid "general_button_okay"
+msgstr ""
+
+#: build/ts.js:1785
+msgid "general_info_created_failed_message"
+msgstr ""
+
+#: build/ts.js:1776
+msgid "general_info_created_message"
+msgstr ""
+
+#: build/ts.js:2552
+msgid "general_info_high_ping_message"
+msgstr ""
+
+#: build/ts.js:2551
+msgid "general_info_high_ping_title"
+msgstr ""
+
+#: build/ts.js:1782
+msgid "general_info_send_canceled"
+msgstr ""
+
+#: build/ts.js:1736
+msgid "general_info_send_message"
+msgstr ""
+
+#: build/ts.js:1735
+msgid "general_info_send_title"
+msgstr ""
+
+#: build/ts.js:188
+msgid "help_title"
+msgstr ""
+
+#: src/login/login.html:15
+#: src/login/login.html:24
+#: src/register/register.html:12
+msgid "input_error_mandatory"
+msgstr ""
+
+#: src/login/login.html:16
+#: src/login/login.html:25
+#: src/register/register.html:13
+#: src/register/register.html:21
+#: src/register/register.html:31
+#: src/text/text.html:13
+msgid "input_error_too_long"
+msgstr ""
+
+#: build/ts.js:377
+msgid "item_delete_text"
+msgstr ""
+
+#: build/ts.js:376
+msgid "item_delete_title"
+msgstr ""
+
+#: build/ts.js:1713
+msgid "item_save_text"
+msgstr ""
+
+#: build/ts.js:1712
+#: build/ts.js:355
+msgid "item_save_title"
+msgstr ""
+
+#: src/mytweets/mytweets.html:5
+msgid "item_saved_subtitle"
+msgstr ""
+
+#: src/rhb/attributeInvolvedPersons/attributeInvolvedPersons.html:33
+#: src/rhb/attributeTrain/attributeTrain.html:7
+#: src/rhb/location/location.html:9
+#: src/rhb/mydata/mydata.html:4
+msgid "loading"
+msgstr ""
+
+#: src/audio/audio.html:46
+#: src/map/map.html:53
+#: src/photo/photo.html:21
+#: src/rhb/attributeInvolvedPersons/attributeInvolvedPersons.html:52
+#: src/rhb/attributeTime/attributeTime.html:50
+#: src/rhb/attributeTrain/attributeTrain.html:50
+#: src/text/text.html:22
+msgid "location_button_next"
+msgstr ""
+
+#: build/ts.js:3382
+#: build/ts.js:956
+#: src/overview/overview.html:11
+msgid "location_title"
+msgstr ""
+
+#: src/login/login.html:30
+msgid "login_button_login"
+msgstr ""
+
+#: src/login/login.html:37
+msgid "login_button_logout"
+msgstr ""
+
+#: build/ts.js:731
+msgid "login_message_create_not_allowed"
+msgstr ""
+
+#: src/login/login.html:12
+msgid "login_placeholder_name"
+msgstr ""
+
+#: src/login/login.html:21
+msgid "login_placeholder_password"
+msgstr ""
+
+#: src/login/login.html:4
+msgid "login_text"
+msgstr ""
+
+#: build/ts.js:730
+msgid "login_title_create_not_allowed"
+msgstr ""
+
+#: build/ts.js:430
+msgid "login_title_logedin"
+msgstr ""
+
+#: src/text/text.html:23
+msgid "message_button_skip"
+msgstr ""
+
+#: src/text/text.html:3
+#: src/text/text.html:9
+msgid "message_subtitle"
+msgstr ""
+
+#: build/ts.js:1408
+#: src/overview/overview.html:57
+msgid "message_title"
+msgstr ""
+
+#: src/rhb/multicategory/multicategory.html:22
+msgid "multicategory_button_skip"
+msgstr ""
+
+#: src/rhb/mydata/mydata.html:31
+msgid "mydata_error"
+msgstr ""
+
+#: src/rhb/mydata/mydata.html:7
+msgid "mydata_login"
+msgstr ""
+
+#: src/rhb/attributeInvolvedPersons/attributeInvolvedPersons.html:23
+#: src/rhb/attributeTrain/attributeTrain.html:24
+#: src/rhb/attributeTrain/attributeTrain.html:41
+#: src/rhb/location/location.html:28
+#: src/rhb/location/location.html:46
+#: src/rhb/mydata/mydata.html:27
+msgid "mydata_nomatches"
+msgstr ""
+
+#: build/ts.js:3234
+msgid "mydata_title"
+msgstr ""
+
+#: build/ts.js:1738
+#: build/ts.js:379
+msgid "option_button_no"
+msgstr ""
+
+#: build/ts.js:378
+msgid "option_button_yes"
+msgstr ""
+
+#: build/ts.js:1752
+msgid "overview_alert_mandatory"
+msgstr ""
+
+#: build/ts.js:1751
+msgid "overview_alert_mandatory_title"
+msgstr ""
+
+#: src/overview/overview.1.html:138
+#: src/overview/overview.html:146
+msgid "overview_button_delete"
+msgstr ""
+
+#: src/overview/overview.1.html:5
+#: src/overview/overview.html:5
+msgid "overview_button_new"
+msgstr ""
+
+#: src/overview/overview.1.html:134
+#: src/overview/overview.html:142
+msgid "overview_button_save"
+msgstr ""
+
+#: src/overview/overview.1.html:136
+#: src/overview/overview.html:144
+msgid "overview_button_send"
+msgstr ""
+
+#: src/overview/overview.1.html:134
+#: src/overview/overview.html:142
+msgid "overview_button_store"
+msgstr ""
+
+#: src/overview/overview.1.html:140
+#: src/overview/overview.html:148
+msgid "overview_button_update"
+msgstr ""
+
+#: build/ts.js:823
+msgid "overview_cancel_option_message"
+msgstr ""
+
+#: build/ts.js:822
+msgid "overview_cancel_option_title"
+msgstr ""
+
+#: build/ts.js:1693
+msgid "overview_delete_option_message"
+msgstr ""
+
+#: build/ts.js:1692
+msgid "overview_delete_option_title"
+msgstr ""
+
+#: src/overview/overview.1.html:65
+#: src/overview/overview.html:77
+msgid "overview_label_involvedPersons_placeholder"
+msgstr ""
+
+#: src/overview/overview.html:20
+msgid "overview_label_location_placeholder"
+msgstr ""
+
+#: src/overview/overview.1.html:53
+#: src/overview/overview.html:61
+msgid "overview_label_text_placeholder"
+msgstr ""
+
+#: src/overview/overview.1.html:41
+#: src/overview/overview.html:45
+msgid "overview_label_time_placeholder"
+msgstr ""
+
+#: src/overview/overview.1.html:79
+#: src/overview/overview.html:92
+msgid "overview_label_train_placeholder"
+msgstr ""
+
+#: src/overview/overview.1.html:4
+#: src/overview/overview.html:4
+msgid "overview_subtitle"
+msgstr ""
+
+#: build/ts.js:1681
+msgid "overview_title"
+msgstr ""
+
+#: build/ts.js:132
+#: build/ts.js:1695
+#: build/ts.js:3614
+#: build/ts.js:825
+#: src/app/progress_dialog.tpl.html:20
+#: src/register/register.html:46
+msgid "personel_button_cancel"
+msgstr ""
+
+#: src/register/register.html:35
+#: src/rhb/mydata/mydata.html:37
+msgid "personel_button_save"
+msgstr ""
+
+#: src/register/register.html:23
+msgid "personel_error_name"
+msgstr ""
+
+#: src/register/register.html:9
+msgid "personel_placeholder_email"
+msgstr ""
+
+#: src/register/register.html:18
+msgid "personel_placeholder_name"
+msgstr ""
+
+#: src/register/register.html:28
+msgid "personel_placeholder_phone"
+msgstr ""
+
+#: build/ts.js:1478
+#: build/ts.js:1484
+msgid "photo_action_sheet_button_1"
+msgstr ""
+
+#: build/ts.js:1479
+#: build/ts.js:1485
+msgid "photo_action_sheet_button_2"
+msgstr ""
+
+#: build/ts.js:1481
+#: build/ts.js:1486
+msgid "photo_action_sheet_button_cancel"
+msgstr ""
+
+#: build/ts.js:1480
+msgid "photo_action_sheet_button_delete"
+msgstr ""
+
+#: build/ts.js:1502
+msgid "photo_action_sheet_title"
+msgstr ""
+
+#: src/photo/photo.html:22
+msgid "photo_button_skip"
+msgstr ""
+
+#: src/photo/photo.html:3
+msgid "photo_subtitle"
+msgstr ""
+
+#: build/ts.js:1471
+#: src/overview/overview.html:105
+msgid "photo_title"
+msgstr ""
+
+#: src/rhb/location/location.html:12
+msgid "rhblocation_chooseLocation"
+msgstr ""
+
+#: src/rhb/location/location.html:49
+msgid "rhblocation_choosePosition"
+msgstr ""
+
+#: src/rhb/location/location.html:31
+msgid "rhblocation_chooseTrack"
+msgstr ""
+
+#: build/ts.js:3255
+#: build/ts.js:3561
+#: build/ts.js:3810
+#: build/ts.js:3812
+#: src/rhb/mydata/mydata.html:9
+msgid "search"
+msgstr ""
+
+#: build/ts.js:148
+msgid "settings_message_cache_message"
+msgstr ""
+
+#: build/ts.js:130
+msgid "settings_message_cache_question"
+msgstr ""
+
+#: build/ts.js:129
+#: build/ts.js:147
+msgid "settings_message_cache_title"
+msgstr ""
+
+#: build/ts.js:99
+msgid "settings_title"
+msgstr ""
+
+#: build/ts.js:115
+msgid "settings_title_clear_cache"
+msgstr ""
+
+#: build/ts.js:114
+msgid "settings_title_demands"
+msgstr ""
+
+#: build/ts.js:113
+msgid "settings_title_help"
+msgstr ""
+
+#: build/ts.js:110
+msgid "settings_title_login"
+msgstr ""
+
+#: build/ts.js:111
+msgid "settings_title_my_items"
+msgstr ""
+
+#: build/ts.js:109
+msgid "settings_title_profil"
+msgstr ""
+
+#: src/audio/audio.html:37
+msgid "speech_button_delete"
+msgstr ""
+
+#: src/audio/audio.html:32
+msgid "speech_button_listen"
+msgstr ""
+
+#: src/audio/audio.html:45
+msgid "speech_button_skip"
+msgstr ""
+
+#: src/audio/audio.html:20
+msgid "speech_button_start"
+msgstr ""
+
+#: src/audio/audio.html:23
+#: src/audio/audio.html:33
+msgid "speech_button_stop"
+msgstr ""
+
+#: src/audio/audio.html:3
+msgid "speech_subtitle"
+msgstr ""
+
+#: build/ts.js:1622
+#: src/overview/overview.html:120
+msgid "speech_title"
+msgstr ""
+
+#: build/ts.js:2548
+msgid "upload_status_connect"
+msgstr ""
+
+#: build/ts.js:2560
+msgid "upload_status_image"
+msgstr ""
+
+#: build/ts.js:2560
+msgid "upload_status_speech"
+msgstr ""
+
+#: build/ts.js:1761
+#: build/ts.js:2559
+#: build/ts.js:2571
+msgid "upload_status_title"
+msgstr ""
+
+#: build/ts.js:1761
+#: build/ts.js:2572
+msgid "upload_status_tweet"
+msgstr ""

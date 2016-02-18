@@ -1,0 +1,51 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-crosswalk-webview": {
+            "PACKAGE_NAME": "ch.wbss.rhb.qs.dev"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "ch.wbss.rhb.qs.dev"
+        },
+        "cordova-plugin-media": {
+            "PACKAGE_NAME": "ch.wbss.rhb.qs.dev"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "ch.wbss.rhb.qs.dev"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "ch.wbss.rhb.qs.dev"
+        },
+        "org.apache.cordova.camera": {
+            "PACKAGE_NAME": "ch.wbss.rhb.qs.dev"
+        },
+        "org.apache.cordova.device": {
+            "PACKAGE_NAME": "ch.wbss.rhb.qs.dev"
+        },
+        "org.apache.cordova.geolocation": {
+            "PACKAGE_NAME": "ch.wbss.rhb.qs.dev"
+        },
+        "org.apache.cordova.globalization": {
+            "PACKAGE_NAME": "ch.wbss.rhb.qs.dev"
+        },
+        "org.apache.cordova.inappbrowser": {
+            "PACKAGE_NAME": "ch.wbss.rhb.qs.dev"
+        },
+        "org.apache.cordova.network-information": {
+            "PACKAGE_NAME": "ch.wbss.rhb.qs.dev"
+        },
+        "org.apache.cordova.splashscreen": {
+            "PACKAGE_NAME": "ch.wbss.rhb.qs.dev"
+        },
+        "uk.co.whiteoctober.cordova.appversion": {
+            "PACKAGE_NAME": "ch.wbss.rhb.qs.dev"
+        }
+    },
+    "dependent_plugins": {}
+}

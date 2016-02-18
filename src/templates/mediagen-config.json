@@ -1,0 +1,10 @@
+{
+    "icon": {
+        "filename": "assets/<%-icon%>",
+        "background": "<%-bgcolor%>"
+    },
+    "splash": {
+        "filename": "assets/<%-splash%>",
+        "background": "<%-bgcolor%>"
+    }
+}
