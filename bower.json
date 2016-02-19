@@ -1,6 +1,6 @@
 {
   "name": "itweet_angular_wbss",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "itweet platform",
   "main": "",
   "authors": [
@@ -10,7 +10,9 @@
   "keywords": [
     "iTweet"
   ],
-  "moduleType": ["amd"],
+  "moduleType": [
+    "amd"
+  ],
   "homepage": "http:www.wbss.ch",
   "ignore": [
     "**/.*",
@@ -20,22 +22,22 @@
     "tests"
   ],
   "dependencies": {
-    "angular-gettext": "2.0.3",
-    "angular-google-maps": "^2.0.17",
-    "angular-i18n": "^1.3.15",
-    "angular-material-icons": "^0.4.0",
-    "angular-messages": "^1.3.15",
-    "angular-toArrayFilter": "^1.0.0",
-    "angular-material": "^0.10.1",
-    "angular-ui-router": "^0.2.13",
-    "angular-cache": "^4.0.2",
-    "angularjs": "^1.3.15",
-    "labjs": "*",
-    "ngstorage": "^0.3.0",
-    "roboto": "https://github.com/sopro-components/roboto.git#~0.1.0",
+    "angular-cache": "4.0.2",
+    "angular-gettext": "2.0.5",
+    "angular-google-maps": "2.0.23",
+    "angular-i18n": "1.3.20",
+    "angular-material": "0.10.1",
+    "angular-material-icons": "0.4.0",
+    "angular-messages": "1.3.20",
+    "angular-toArrayFilter": "1.0.1",
+    "angular-ui-router": "0.2.15",
+    "angularjs": "1.3.20",
+    "labjs": "2.0.3",
+    "roboto": "https://github.com/sopro-components/roboto.git#0.1.0",
+    "ngGeolocation": "0.0.8",
+    "ngstorage": "0.3.10",
     "ng-clustered-map": "*",
-    "ngGeolocation": "^0.0.7",
-    "rusha": "^0.7.7",
-    "ui-router-extras": "^0.0.13"
+    "rusha": "0.7.7",
+    "ui-router-extras": "0.0.14"
   }
 }
