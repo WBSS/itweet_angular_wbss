@@ -24,7 +24,7 @@ var templateconfig = function (config) {
     appID: 'rhbswiss',
     appPackage: 'ch.wbss.rhb.qs',
     itweetURL: 'https://rhb.itweet.ch/mvc/mobile/rhb/1/',
-    appVersion: '0.8.0',
+    appVersion: '0.8.1',
     splash: 'rhb_splash_logo.png',
     icon: 'icon_android.png',
     bgcolor: 'e6041b'
@@ -33,7 +33,7 @@ var templateconfig = function (config) {
     appID: 'rhbswiss',
     appPackage: 'ch.wbss.rhb.qs.uta',
     itweetURL: 'https://sandbox.itweet.ch/mvc/mobile/rhb/1/',
-    appVersion: '0.8.0',
+    appVersion: '0.8.1',
     splash: 'rhb_splash_logo.png',
     icon: 'icon_android.png',
     bgcolor: 'e6041b'
@@ -42,7 +42,7 @@ var templateconfig = function (config) {
     appID: 'rhbswiss',
     appPackage: 'ch.wbss.rhb.qs.dev',
     itweetURL: 'https://rhbappdev.itweet.ch/mvc/mobile/rhb/1/',
-    appVersion: '0.8.0',
+    appVersion: '0.8.1',
     splash: 'rhb_splash_logo.png',
     icon: 'icon_android.png',
     bgcolor: 'e6041b'
@@ -188,13 +188,6 @@ module.exports = function (grunt) {
     exec: {
       //----- cordova taks
       //------------------------------------//
-      builder_android: {
-        cmd: 'cordova build android'
-      },
-      builder_ios: {
-        //cmd: 'cordova build ios --codeSignIdentitiy="iPhone Distribtion" --provisioningProfile="926c2bd6-8de9-4c2f-8407-1016d2d12954'
-        cmd: 'cordova build ios'
-      },
       builder_android_release: {
         cmd: 'cordova build --release android'
       },
@@ -202,11 +195,11 @@ module.exports = function (grunt) {
         cmd: 'cordova build --release ios'
       },
       runner_android: {
-        cmd: 'cordova run android --device'
+        cmd: 'cordova run android --device --debug'
       },
       runner_ios: {
         //cmd: 'cordova run ios --device  --codeSignIdentitiy="iPhone Development" --provisioningProfile="b73af506-6d3b-4461-81a6-d6aea106a3f4'
-        cmd: 'cordova run ios --device'
+        cmd: 'cordova run ios --device --debug'
       },
       cleaner_platform_android: {
         cmd: 'cordova clean android'
@@ -315,6 +308,7 @@ module.exports = function (grunt) {
   // build&deploy local device (USB adapter)
   // run default android
   grunt.registerTask('_compile-and-run_android', ['_prepare', 'exec:runner_android']);
+  grunt.registerTask('_compile-and-run_android_release', ['_prepare', 'exec:runner_android_release']);
 
   // run default ios
   grunt.registerTask('_compile-and-run_ios', ['_prepare', 'exec:runner_ios']);
