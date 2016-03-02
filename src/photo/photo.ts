@@ -14,7 +14,6 @@ module itweet.photo {
 			'$scope', 'gettextCatalog', 'itweetMedia', '$mdToast', '$mdBottomSheet', '$log','$q','ItweetConfig','$timeout'
 		];
 
-
 		private index: number;
 		private entries_with_image = [];
 		private entries_without_image = [];
@@ -51,6 +50,7 @@ module itweet.photo {
 			    { name: gettextCatalog.getString('photo_action_sheet_button_cancel'), icon: 'print' }
 			];
 		}
+
 		updatePhotos(newValue=this.$scope.mediaService.dataImages()){
 			this.$scope.images = newValue.map((value,index,array) =>  {return {index:index,value:value||'img/camera/camera_cleargrey.png'}});
 			this.$timeout(() => {this.$scope.$digest();},0,true);
@@ -178,5 +178,5 @@ module itweet.photo {
             });
             
         }
-    ]);;
+    ]);
 }

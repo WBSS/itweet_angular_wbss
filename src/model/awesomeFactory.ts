@@ -96,16 +96,12 @@ module itweet.model {
 
     }
 
-
-
-
     export class BasicService<T> {
         public responseData: T;   /* response data */
         public responseError: any;  /* response error */
         public lastFetched: number; /*last timestamp */
         private lastToken: any /* last token */
         public loading: angular.IDeferred<any>; /* defered, can cancle current request */
-
 
         reset() {
             this.lastToken = undefined;
@@ -123,6 +119,7 @@ module itweet.model {
         initData() {
             this.responseData = <T>{};
         }
+
         saveData() {
         }
 
@@ -187,6 +184,7 @@ module itweet.model {
             return resp;
 
         }
+
         setupRequest(): angular.IRequestConfig { return null; } /* setup the request, MUST OVERRIDE */
 
         constructor(protected runner: ServiceFactory, public reload: boolean) {
@@ -197,7 +195,6 @@ module itweet.model {
 
     }
 
-
     export class LoginData {
         public username: string;
         public password: string;
@@ -206,15 +203,11 @@ module itweet.model {
         public appId: string;
     }
 
-
-
-
     export class LoginService extends BasicService<LoginResponse>{
         public data: LoginData;
         constructor(protected runner: ServiceFactory) {
             super(runner, false);
         }
-
 
         logout() {
             this.runner.ItweetStorage.user.showContext = true;
@@ -236,7 +229,6 @@ module itweet.model {
             });
         }
 
-
         setupRequest(): angular.IRequestConfig {
             this.data.langISO = this.runner.config.langISO;
             this.data.countryISO = this.runner.config.countryISO;
@@ -249,10 +241,13 @@ module itweet.model {
             }
         }
     }
+
     export class BrandService extends BasicService<BrandResponse> {
         constructor(protected runner: ServiceFactory, retry: boolean = true) {
             super(runner, retry);
         }
+        private colorSubheader: string="#ffffff";
+
         initData() {
             super.initData();
             if (angular.equals({}, this.responseData)) {
@@ -265,7 +260,7 @@ module itweet.model {
         getColor(key: string) {
             var hex = this.getResponseData()[key];
             if (!hex) {
-                return "";
+                hex=this.colorSubheader;
             }
             var a, r, g, b: number;
             a = 255;
@@ -281,9 +276,11 @@ module itweet.model {
             }
             return 'rgba(' + r + ',' + g + ',' + b + ',' + a + ')';
         }
+
         getSubheaderStyle() {
             return "color:" + this.getColor('subheaderColorText') + ";background-color:rgba(226,0,26,216);margin-right:0px;;overflow: hidden;";
         }
+
         getFooterStyle() {
             return "color:" + this.getColor('footerButtonColorText') + ";background-color:" + this.getColor('footerButtonColor') + ";";
         }
@@ -315,9 +312,11 @@ module itweet.model {
                 url: this.runner.config.endpoint_ping
             }
         }
+
         constructor(protected runner: ServiceFactory) {
             super(runner, false);
         }
+
         run(currentLoading: angular.IDeferred<any> = this.runner.$q.defer()) {
             var start = Date.now();
             return super.run(currentLoading).then(() => {
@@ -443,6 +442,7 @@ module itweet.model {
                 }
             }
         }
+
         run(currentLoading: angular.IDeferred<any> = this.runner.$q.defer()) {
             return super.run(currentLoading).then(() => {
                 this.tweet.sent = true;
@@ -504,6 +504,7 @@ module itweet.model {
                 this.runner.ItweetStorage.user.token
             }
         }
+
         run(currentLoading: angular.IDeferred<any> = this.runner.$q.defer()) {
             return super.run(currentLoading).then(() => {
                 angular.forEach(this.responseData, (elem: itweet.model.Context) => {
@@ -520,6 +521,7 @@ module itweet.model {
         constructor(protected runner: ServiceFactory, retry: boolean = true) {
             super(runner, retry);
         }
+
         initData() {
             super.initData();
             if (angular.equals({}, this.responseData)) {
@@ -573,6 +575,7 @@ module itweet.model {
                 return "undefined"
             }
         }
+
         getSubcategoryName(tweet: itweet.model.Tweet = this.runner.ItweetStorage.currentTweet): string {
             //Base implementation has no subcategories
             return null;
@@ -584,6 +587,7 @@ module itweet.model {
         contextToken() {
             return this.token;
         }
+
         constructor(protected runner: ServiceFactory, public token: string) {
             super(runner, false);
         }
@@ -592,6 +596,7 @@ module itweet.model {
         contextToken() {
             return this.token;
         }
+
         constructor(protected runner: ServiceFactory, public token: string) {
             super(runner, false);
         }

@@ -1,6 +1,6 @@
 <ng-include src="'app/menu.html'"></ng-include>
 <md-subheader class="md-primary" style="{{::subheaderStyle}}">
-    <span style="colcor: #ffffff">Registrieren</span>
+    <span translate>Registrieren</span>
 </md-subheader>
 <md-content class="md-padding" flex>
 		<div ng-switch="vm.loaded">
@@ -35,6 +35,7 @@
       </form>
      </div>
 </md-content>
+
 <footer ng-show="vm.loaded">
 	<md-button class="md-primary footer-button" style="{{::footerStyle}}" ng-click="vm.save()"><span translate>personel_button_save</span></md-button>
 </footer>

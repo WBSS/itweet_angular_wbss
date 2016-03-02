@@ -144,9 +144,11 @@ module itweet.model {
         deleteAudio() {
             this.runner.ItweetStorage.setAudio(0);
         }
+
         getAudio() {
             this.runner.ItweetStorage.getAudio();
         }
+
         saveAudio(fileSystemUri: string) {
             return this.runner.saveFile(fileSystemUri).then((internalUri: string) => {
                 this.runner.$log.debug(" Saved to internal storage: " + internalUri);

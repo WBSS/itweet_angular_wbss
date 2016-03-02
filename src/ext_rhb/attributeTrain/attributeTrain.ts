@@ -13,17 +13,13 @@ module itweet.attributeTrain {
 		public searchTrainText: string;
 		public searchTrainId: any;
 		public searchTrainPlaceholder:string;
-		
-		
 		public vehicles:any;
 		public selectedVehicle:any;
 		public searchVehicleText: string;
 		public searchVehiclePlaceholder:string;
-
 		public static $inject = [
 			'$scope', 'gettextCatalog', 'itweetNetwork', 'ItweetStorage', '$mdToast', '$log','$q','$window'
 		];
-		
 
 		constructor(
 			private $scope: RhBAttributeTrainControllerScope,
@@ -36,7 +32,7 @@ module itweet.attributeTrain {
 			private $window
 		) {
 			$scope.vm = this;
-			$scope.menu_parameters.title = gettextCatalog.getString('attribute_title_train');
+			$scope.menu_parameters.title = gettextCatalog.getString('Objekt');
 			$scope.menu_parameters.icon = 'arrow_back';
 			$scope.menu_parameters.navigate = 'back';
 			$scope.networkServiceHolder['primary'] = network.metadataService;
@@ -52,9 +48,9 @@ module itweet.attributeTrain {
 				}
 			});
 			$scope.vm.searchTrainText = "";
-			$scope.vm.searchTrainPlaceholder = this.gettextCatalog.getString('search');
+			$scope.vm.searchTrainPlaceholder = this.gettextCatalog.getString('Suchen*..');
 			$scope.vm.searchVehicleText = "";
-			$scope.vm.searchVehiclePlaceholder = this.gettextCatalog.getString('search');
+			$scope.vm.searchVehiclePlaceholder = this.gettextCatalog.getString('Suchen*..');
 
 			//if(this.$scope.storageService.currentTweet.itemQs.refTrainId) $scope.vm.searchTrainText  = this.$scope.storageService.currentTweet.itemQs.refTrainId;
 			//if(this.$scope.storageService.currentTweet.itemQs.refWagonId) $scope.vm.searchVehicleText  = this.$scope.storageService.currentTweet.itemQs.refWagonId;
@@ -82,6 +78,7 @@ module itweet.attributeTrain {
 				}
 			}
 		}
+
 		updateByMeta(meta: itweet.model.MetadataResponse = this.network.metadataService.getResponseData()) {
 			
 			if(meta.trains){
@@ -112,11 +109,13 @@ module itweet.attributeTrain {
 			}
 			this.loaded = true;
 		}
+
 		querySearch (query,list) {
 			var results = list.filter(this.createFilterFor(query));
 			var t = results.slice(0,12);
 			return t;
 		}
+
 		createFilterFor(q) {
 			var query = q.toLowerCase();
 			return function filterFn(item) {
@@ -125,6 +124,7 @@ module itweet.attributeTrain {
 				return i;
 			};
 		}
+
 		selectedTrainChange(train){
 			console.log('change train',train);
 			if(typeof train != 'undefined'){
@@ -133,18 +133,22 @@ module itweet.attributeTrain {
 			}else this.selectedTrain = null;
 
 		}
+
 		selectedVehicleChange(wagon){
 			if(typeof wagon != 'undefined'){
 				this.$window.document.activeElement.blur();
 				this.selectedVehicle = wagon;
 			}else this.selectedVehicle  = null;
 		}
+
 		getFullTrain(train){
 			return (train.trainNr+' : '+train.carrier+' : '+train.route).toString();
 		}
+
 		getFullVehicle(wagon){
 			return (wagon.wagonNr+' : '+wagon.objectName).toString();
 		}
+
 		nextClicked(){
 			
 			if(this.selectedTrain){

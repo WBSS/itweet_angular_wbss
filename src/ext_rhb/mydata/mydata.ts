@@ -13,14 +13,10 @@ module itweet.category {
 		public searchText: string;
 		public searchPlaceholder:string;
 		public validPerson: Boolean = true;
-	
-		
 		public static $inject = [
 			'$scope', '$previousState', '$state', 'gettextCatalog', 'itweetNetwork', 'ItweetStorage', '$stateParams','ItweetNavigation','$window'
 		];
 
-		
-		
 		// dependencies are injected via AngularJS $injector
 		// controller's name is registered in Application.ts and specified from ng-controller attribute in index.html
 		constructor(
@@ -89,6 +85,7 @@ module itweet.category {
 				
 			}
 		}
+
 		save() {
 			if(this.selectedPerson != null){
 				this.$scope.vm.validPerson = true;
@@ -110,11 +107,13 @@ module itweet.category {
 				this.$scope.vm.validPerson = false;
 			}
 		}
+
 		querySearch (query) {
 			var results = this.persons.filter(this.createFilterFor(query));
 			var t = results.slice(0,25);
 			return t;
 		}
+
 		createFilterFor(q) {
 			var query = q.toLowerCase();
 			return function filterFn(person) {
@@ -128,6 +127,7 @@ module itweet.category {
 				return i;
 			};
 		}
+
 		searchTextChange (textChange){
 			console.log('text change');
 		}
@@ -139,6 +139,7 @@ module itweet.category {
 				
 			}
 		}
+
 		getFullPerson (person){
 			if(person.id)return person.id+', '+person.firstName+' '+person.lastName+', '+person.department;
 			else return "";
@@ -158,5 +159,5 @@ module itweet.category {
 						});
 
 				}
-			]);;
+			]);
 }

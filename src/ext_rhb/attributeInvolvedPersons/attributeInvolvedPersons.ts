@@ -20,7 +20,6 @@ module itweet.attributeInvolvedPersons {
 		public static $inject = [
 			'$scope', 'gettextCatalog', 'itweetNetwork', 'ItweetStorage', '$mdToast', '$mdDialog', '$log','$q','$window'
 		];
-		
 
 		constructor(
 			private $scope: RhBAttributeInvolvedPersonsControllerScope,
@@ -55,6 +54,7 @@ module itweet.attributeInvolvedPersons {
 			
 			this.storedPersons = this.$scope.storageService.currentTweet.itemQs.personsInvolvedIds;
 		}
+
 		updateByMeta(meta: itweet.model.MetadataResponse = this.network.metadataService.getResponseData()) {
 			
 			if(meta.persons){
@@ -80,6 +80,7 @@ module itweet.attributeInvolvedPersons {
 				
 			}
 		}
+
 		addPerson(person){
 			console.log('add');
 			this.$scope.vm.errorMessage = "";
@@ -99,9 +100,9 @@ module itweet.attributeInvolvedPersons {
 			} else {
 				console.log('no selected person');
 				//this.$scope.vm.errorMessage = this.gettextCatalog.getString("attribute_error_no_valid_person");
-				
 			}
 		}
+
 		removePerson(i){
 			this.$scope.vm.errorMessage = "";
 			var alertPromise = this.$mdDialog.confirm({
@@ -121,6 +122,7 @@ module itweet.attributeInvolvedPersons {
                     alertPromise = undefined;
                 });
 		}
+
 		nextClicked(){
 			//this.$scope.storageService.currentTweet.date = this.newSelectedDate.toDateString();
 			if(this.addedPersons.length!=0){
@@ -137,11 +139,13 @@ module itweet.attributeInvolvedPersons {
 			
             this.$scope.navigationService.next();
 		}
+
 		querySearch (query) {
 			var results = this.persons.filter(this.createFilterFor(query));
 			var t = results.slice(0,25);
 			return t;
 		}
+
 		createFilterFor(q) {
 			var query = q.toLowerCase();
 			return function filterFn(person) {
@@ -155,6 +159,7 @@ module itweet.attributeInvolvedPersons {
 				return i;
 			};
 		}
+
 		searchTextChange (textChange){
 			console.log('text change');
 		}
@@ -165,6 +170,7 @@ module itweet.attributeInvolvedPersons {
 				this.selectedPerson = item;
 			}
 		}
+
 		getFullPerson (person){
 			if(person.id)return person.id+', '+person.firstName+' '+person.lastName+', '+person.department;
 			else return "";

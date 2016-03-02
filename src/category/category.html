@@ -7,7 +7,6 @@
 		<md-list layout="column">
 			<md-item ng-repeat="category in networkServiceHolder['primary'].getResponseData().categories track by category.id">
 				<md-item-content>
-
 					<md-button layout-fill ng-class="{active : storageService.currentTweet.refItemCategoryId == category.id }" role="button" tabIndex="0" ng-click="vm.selectCategory(category)" md-highlight="vm.isCategorySelected(category)"
 					layout="start center">
 						{{::category.name}}

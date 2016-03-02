@@ -20,3 +20,18 @@ angular.module('itweet.overview', ['gettext','ui.router', 'ngMaterial'])
 
         }
     ]);
+
+angular.module('itweet.alltweets', ['gettext','ui.router','ngMaterial'])
+    .controller('AlltweetsController', itweet.alltweets.RHBAlltweetsController)
+    .config(
+        ["$stateProvider", // more dependencies
+            ($stateProvider:angular.ui.IStateProvider) =>
+            {
+                $stateProvider
+                    .state('app.alltweets', {
+                        url: "/alltweets",
+                        templateUrl: "ext_rhb/alltweets/alltweets.html",
+                        controller: 'AlltweetsController'
+                    });
+            }
+        ]);

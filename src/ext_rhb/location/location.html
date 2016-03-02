@@ -1,7 +1,7 @@
 <ng-include src="'app/menu.html'"></ng-include>
 <md-content flex>
 	<md-subheader class="md-primary" style="{{::subheaderStyle}}">
-		<span translate>attribute_train_subheader</span>
+		<span translate>attribute_train_subheader</span>&nbsp;<span translate>lbl_info_file_mandatory_multi</span>
 	</md-subheader>
 	<div class="md-padding">
 		<div ng-switch="vm.loaded">
@@ -20,7 +20,7 @@
 			md-items="location in vm.querySearch(vm.searchLocationText,vm.locations)"
 			md-item-text="vm.getFullText(location)"
 			md-min-length="0"
-			placeholder="Suche...">
+			placeholder="Suche*...">
 			<md-item-template>
 				<span md-highlight-text="vm.searchLoactionText">{{vm.getFullText(location)}}</span>
 			</md-item-template>	
@@ -38,7 +38,7 @@
 			md-items="track in vm.querySearch(vm.searchTrackText,vm.tracks)"
 			md-item-text="vm.getFullText(track)"
 			md-min-length="0"
-			placeholder="Suche...">
+			placeholder="Suche*...">
 			<md-item-template>
 				<span md-highlight-text="vm.searchTrackText">{{vm.getFullText(track)}}</span>
 			</md-item-template>
@@ -53,7 +53,7 @@
 		</md-input-container>.
 		<md-input-container>
 			<input ng-model="vm.currentTrackPosition[1]" maxlength="3" type="tel">
-		</md-input-container>km
+		</md-input-container>km*
 		</div>
       </form>
      </div>

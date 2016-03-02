@@ -1,6 +1,5 @@
 module itweet.overview {
 
-
 	export interface OverviewControllerScope extends itweet.AppControllerScope{
 		vm: OverviewController;
 		categoryService: itweet.model.CategoryService;
@@ -12,7 +11,7 @@ module itweet.overview {
 	export class OverviewController {
 
 		public static $inject = [
-			'$scope', '$log', '$state', 'gettextCatalog', 'itweetNetwork','itweetMedia','$q','$mdDialog','$timeout'
+			'$scope', '$log', '$state', 'gettextCatalog', 'itweetNetwork','itweetMedia','$q','$mdDialog','$timeout','ItweetConfig'
 		];
 		public testDate:Date;
 
@@ -25,7 +24,8 @@ module itweet.overview {
 			public itweetMedia: itweet.model.MediaFactory,
 			public $q,
 			public $mdDialog,
-            protected $timeout
+            protected $timeout,
+			protected config:itweet.model.BaseConfig
 		) {
 			$scope.vm = this;
 			$scope.categoryService = network.categoryService;
@@ -64,6 +64,7 @@ module itweet.overview {
                     alertPromise = undefined;
                 });
         }
+
 		saveTweet() {
             this.$scope.storageService.saveTweet(this.$scope.storageService.currentTweet);
             var alertPromise = this.$mdDialog.confirm({
@@ -80,7 +81,7 @@ module itweet.overview {
 		}
 		
 		validateTweet(currentTweet){
-            if(!currentTweet.txt) return false;
+			//if(!currentTweet.txt) return false;
             return true;
         }
 		
@@ -114,7 +115,6 @@ module itweet.overview {
 		}
 
 		sendTweet() {
-
 			var defered =  this.$q.defer();
 			var ourData = new ProgressDialogData(this.gettextCatalog.getString("upload_status_title"), this.gettextCatalog.getString("upload_status_tweet"), true,defered,false);
 			var dialogPromise = this.$mdDialog.show({

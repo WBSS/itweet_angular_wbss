@@ -53,7 +53,7 @@ msgstr "Skip involved persons"
 
 #: src/rhb/attributeInvolvedPersons/attributeInvolvedPersons.html:3
 msgid "attribute_involvedPersons_subtitle"
-msgstr "Add involved persons to event"
+msgstr "Add persons"
 
 #: src/rhb/attributeInvolvedPersons/attributeInvolvedPersons.html:6
 msgid "attribute_involvedPersons_text"
@@ -69,7 +69,7 @@ msgstr "Set eventtime date/time"
 
 #: build/ts.js:3546 src/overview/overview.html:73
 msgid "attribute_title_involvedPersons"
-msgstr "Involved Persons"
+msgstr "Involved"
 
 #: build/ts.js:3721 src/overview/overview.html:41
 msgid "attribute_title_time"
@@ -82,7 +82,7 @@ msgstr "Train and Wagons"
 #: src/rhb/attributeTrain/attributeTrain.html:3
 #: src/rhb/location/location.html:4
 msgid "attribute_train_subheader"
-msgstr "Choose train"
+msgstr "Choose"
 
 #: build/ts.js:1354 build/ts.js:3157 src/overview/overview.html:28
 msgid "category_title"
@@ -240,7 +240,7 @@ msgstr "Next"
 
 #: build/ts.js:3382 build/ts.js:956 src/overview/overview.html:11
 msgid "location_title"
-msgstr "Location"
+msgstr "Train station / location"
 
 #: src/login/login.html:30
 msgid "login_button_login"
@@ -282,6 +282,9 @@ msgstr "Next without text"
 #: src/text/text.html:3 src/text/text.html:9
 msgid "message_subtitle"
 msgstr "Writing"
+
+msgid "message_placeholder"
+msgstr "Text*..."
 
 #: build/ts.js:1408 src/overview/overview.html:57
 msgid "message_title"
@@ -454,15 +457,14 @@ msgstr "Photos"
 
 #: src/rhb/location/location.html:12
 msgid "rhblocation_chooseLocation"
-msgstr "Choose a Location:"
-
-#: src/rhb/location/location.html:49
-msgid "rhblocation_choosePosition"
-msgstr "Choose a Position:"
+msgstr "Location"
 
 #: src/rhb/location/location.html:31
 msgid "rhblocation_chooseTrack"
-msgstr "Choose a Track:"
+msgstr "Track"
+
+msgid "rhblocation_choosePosition"
+msgstr "Track position"
 
 #: build/ts.js:3255 build/ts.js:3561 build/ts.js:3810 build/ts.js:3812
 #: src/rhb/mydata/mydata.html:9
@@ -556,6 +558,12 @@ msgstr "Upload"
 #: build/ts.js:1761 build/ts.js:2572
 msgid "upload_status_tweet"
 msgstr "Information"
+
+msgid "lbl_info_file_mandatory_multi"
+msgstr "(Fill in at least on field*)"
+
+msgid "lbl_info_file_mandatory"
+msgstr "(Fill in content*)"
 
 #~ msgid "location_button_map_style"
 #~ msgstr "Map"

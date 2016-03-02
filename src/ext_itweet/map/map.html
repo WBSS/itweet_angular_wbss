@@ -7,14 +7,10 @@
         </ui-gmap-marker>
         <ui-gmap-circle center="position.coords" radius="position.coords.accuracy" stroke="circleoptions.stroke" fill="circleoptions.fill"
         clickable="false"></ui-gmap-circle>
-        
         <!-- <ui-gmap-markers doCluster="true" models="vm.streckenMarkers"></ui-gmap-markers> -->
-
     </ui-gmap-google-map>
     <div class="map_img_crosshair"></div>
 </div>
-
-
 <div class="map-top animate-hide" ng-hide="menu_parameters.fullscreen">
     <ng-include src="'app/menu.html'"></ng-include>
     <!--<div layout="row" layout-align="space-around center" class="map-toolbar md-primary" layout-fill style="{{brand.getSubheaderStyle()}}">
@@ -38,11 +34,6 @@
         </md-button>
     </div>
 </div>
-
-
-
-
-
 <div class="bottom-navigation-box animate-hide" ng-hide="menu_parameters.fullscreen" style="{{brand.getFooterStyle()}}">
     <md-button class="md-primary footer-button" ng-click="navigationService.next()" style="{{brand.getFooterStyle()}}"><span translate>location_button_next</span></md-button>
     <!-- ng-if="vm.$previousState.get().state.name != 'map.overview'" -->

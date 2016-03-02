@@ -16,6 +16,20 @@ angular.module('itweet.overview', ['gettext','ui.router', 'ngMaterial'])
                 controller: 'OverviewController'//,
                 //onEnter: 'OverviewController.onEnter()'
             });
-
         }
     ]);
+
+angular.module('itweet.alltweets', ['gettext','ui.router','ngMaterial'])
+    .controller('AlltweetsController', itweet.alltweets.AlltweetsController)
+    .config(
+        ["$stateProvider", // more dependencies
+            ($stateProvider:angular.ui.IStateProvider) =>
+            {
+                $stateProvider
+                    .state('app.alltweets', {
+                        url: "/alltweets",
+                        templateUrl: "ext_itweet/alltweets/alltweets.html",
+                        controller: 'AlltweetsController'
+                    });
+            }
+        ]);

@@ -65,13 +65,11 @@ a.md-button:not([disabled]).md-icon-button:hover.map_button.active, .md-button:n
     line-height: 20px;
     opacity: 1;
 }
-
 .animate-hide.ng-hide {
     line-height: 0;
     opacity: 0;
     padding: 0 10px;
 }
-
 .map-top{
     position: absolute;
     top:0px;

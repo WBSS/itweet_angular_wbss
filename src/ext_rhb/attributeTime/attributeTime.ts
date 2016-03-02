@@ -9,13 +9,11 @@ module itweet.attributeTime {
 	export class RhBAttributeTimeController {
 		public newSelectedDate:Date;
 		public invalidDate:boolean=false;
-		
 		public timeDays:string[] = ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31"];
 		public timeMonths:string[] = ["Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"];
 		public timeYear:string[] =["2013","2014","2015","2016","2017","2018","2019","2020"];
 		public timeHours:string[] = ["00","01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24"];
 		public timeMinutes:string[] = ["00","05","10","15","20","25","30","35","40","45","50","55"];
-		
 		public newSelectDay:string = "";
 		public newSelectMonth:number = null;
 		public newSelectYear:string = "";
@@ -25,7 +23,6 @@ module itweet.attributeTime {
 		public static $inject = [
 			'$scope', 'gettextCatalog', 'itweetNetwork', 'ItweetStorage', '$mdToast', '$mdDialog', '$log','$q'
 		];
-		
 
 		constructor(
 			private $scope: RhBAttributeTimeControllerScope,
@@ -49,6 +46,7 @@ module itweet.attributeTime {
 			}
 			this.invalidDate=false;
 		}
+
 		setDate(newDate){
 			console.log("setDate",newDate);
 			this.newSelectDay = newDate.getUTCDate().toString();
@@ -58,6 +56,7 @@ module itweet.attributeTime {
 			this.newSelectHours = newDate.getHours();
 			this.newSelectMinutes = parseInt((newDate.getMinutes()/5).toString(),10);
 		}
+
 		nextClicked(){
 			var newDate = new Date();
 			newDate.setUTCDate(+this.newSelectDay);

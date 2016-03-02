@@ -12,13 +12,13 @@ module itweet.alltweets {
         private timeoutRunner:ng.IPromise<any>;
         
         constructor(
-            private $scope:AlltweetsControllerScope,
-            private gettextCatalog,
-            private $interval:ng.IIntervalService,
-            private $mdDialog,
-			private ItweetConfig:itweet.model.BaseConfig,
-            private $log:ng.ILogService,
-            private $sce:ng.ISCEService){
+            protected $scope:AlltweetsControllerScope,
+            protected gettextCatalog,
+            protected $interval:ng.IIntervalService,
+            protected $mdDialog,
+            protected ItweetConfig:itweet.model.BaseConfig,
+            protected $log:ng.ILogService,
+            protected $sce:ng.ISCEService){
                 this.$scope.networkServiceHolder['primary'] = {loading:false};
                 $scope.vm = this;
                 $scope.menu_parameters.title = "";
@@ -90,6 +90,7 @@ module itweet.alltweets {
             var lat = this.$scope.storageService.currentTweet.latDevice;
 			var lng = this.$scope.storageService.currentTweet.lngDevice;
             var token = this.$scope.storageService.user.token || this.$scope.storageService.currentTweet.contextToken;
+            //var userid = this.$scope.storageService.user.userID;
             
 			var url =     this.ItweetConfig.endpoint_myitems+"/"+this.ItweetConfig.appId+"/"+lat+"/"+lng+"/"+
                              this.ItweetConfig.langISO+"/"+this.ItweetConfig.countryISO+"/"+this.ItweetConfig.platform+"/"+token;
@@ -99,20 +100,5 @@ module itweet.alltweets {
             return this.$sce.trustAsResourceUrl(url);
         }
 	}
-
-	angular.module('itweet.alltweets', ['gettext','ui.router','ngMaterial'])
-            .controller('AlltweetsController', AlltweetsController)
-             .config(
-    ["$stateProvider", // more dependencies
-        ($stateProvider:angular.ui.IStateProvider) =>
-        {
-        	$stateProvider
-        	    .state('app.alltweets', {
-                url: "/alltweets",
-                templateUrl: "alltweets/alltweets.html",
-                controller: 'AlltweetsController'
-            });
-        }
-    ]);
 
 }

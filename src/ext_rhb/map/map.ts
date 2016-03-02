@@ -28,7 +28,6 @@ module itweet.map {
 		public markersData:any;
 		public streckenMarkers:any;
 		public markerCluster:any;
-		
 		public loadOverlay:any
 		// $inject annotation.
 		// It provides $injector with information about dependencies to be injected into constructor
@@ -38,7 +37,6 @@ module itweet.map {
 			'$scope', '$state', 'gettextCatalog', 'uiGmapGoogleMapApi','uiGmapIsReady','$geolocation','ItweetStorage',
             '$timeout','ItweetNavigation','$rootScope','itweetNetwork','$mdDialog'
 		];
-
 		private center: any;
 
 		// dependencies are injected via AngularJS $injector
@@ -198,6 +196,7 @@ module itweet.map {
                 this.stopGeo();
 			});
 		}
+
 		updatePos(){
 			
 			if(!this.$scope.manual && this.$scope.position && this.$scope.position.coords && this.$scope.gmap.map){
@@ -210,11 +209,13 @@ module itweet.map {
 				
 			}
 		}
+
         stopGeo(){
             if(this.watch){
                 this.watch.clearWatch();
             }
         }
+
         startGeo(){
             this.stopGeo();
             /*this.watch = this.$geolocation.watchPosition({
@@ -222,17 +223,21 @@ module itweet.map {
                 enableHighAccuracy: true
             });*/
         }
+
 		zoomPlus() {
 			this.$scope.gmap.zoom = Math.min(this.$scope.gmap.zoom + 1,20);
 		}
+
 		zoomMinus() {
 			this.$scope.gmap.zoom = Math.max(this.$scope.gmap.zoom - 1,4);
 		}
+
 		myPosition() {
 			this.$scope.position = this.$geolocation.position;
 			this.$scope.manual = false;
 			this.updatePos();
 		}
+
 		toggleMap() {
 			this.loadOverlay = this.$mdDialog.show({
                 template: "<md-progress-circular md-mode=\"indeterminate\"></md-progress-circular>"
@@ -253,6 +258,7 @@ module itweet.map {
 			this.ItweetStorage.user.mapType = this.$scope.gmap.options.mapTypeId;
 
 		}
+
 		toggleTracks(){
 			if(this.showTracks == false){
 				
@@ -272,6 +278,7 @@ module itweet.map {
 			}
 			this.showTracks = !this.showTracks;
 		}
+
 		getMarkers(zoomLevel){
 			if(!this.showMarkers) return;
 			
@@ -305,6 +312,7 @@ module itweet.map {
 			this.markersData.setMap(this.$scope.gmap.map);
 			
 		}
+
 		toggleMarkers(){
 			if(this.showMarkers == false){
 				this.showMarkers = true;
@@ -315,10 +323,12 @@ module itweet.map {
 				this.markersData.setMap(null);
 			}
 		}
+
 		hideDialog(){
 			console.log('finished2222');
 			this.$mdDialog.hide();
 		}
+
 		geocode(){
             var tweet = this.ItweetStorage.currentTweet;
             tweet.location = "";
@@ -347,6 +357,7 @@ module itweet.map {
 				});
 			});
 		}
+
 		resizeMap(){
 			
 			if (this.$scope.gmap.map.control.getGMap ){
@@ -355,6 +366,7 @@ module itweet.map {
 				google.maps.event.trigger(map, 'resize');
 			}
 		}
+
 		toggleFullscreen(){
 				this.$scope.searchbox.options.visible = this.$scope.menu_parameters.fullscreen;
 				this.$scope.menu_parameters.fullscreen = !this.$scope.menu_parameters.fullscreen;

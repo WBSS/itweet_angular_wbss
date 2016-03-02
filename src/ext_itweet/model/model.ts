@@ -77,4 +77,3 @@ module itweet.model {
     }
     
 }
-

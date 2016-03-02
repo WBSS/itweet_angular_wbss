@@ -16,16 +16,11 @@ module itweet.category {
 		public currentTrackPosition: any;
 		public searchTrackText:string;
 		public loaded: Boolean = false;
-		
 		public locationElement:any;
-	
-		
 		public static $inject = [
 			'$scope', '$previousState', '$state', 'gettextCatalog', 'itweetNetwork', 'ItweetStorage', '$stateParams','ItweetNavigation','$window'
 		];
 
-		
-		
 		// dependencies are injected via AngularJS $injector
 		// controller's name is registered in Application.ts and specified from ng-controller attribute in index.html
 		constructor(
@@ -132,11 +127,13 @@ module itweet.category {
 				this.$window.document.activeElement.blur();
 			} else this.selectedTrack = null;
 		}
+
 		querySearch(query,list){
 			var results = list.filter(this.createFilterFor(query));
 			var t = results.slice(0,12);
 			return t;
 		}
+
 		createFilterFor(q) {
 			var query = q.toLowerCase();
 			return function filterFn(item) {
@@ -148,6 +145,7 @@ module itweet.category {
 		getFullText(item){
 			return item.name.toString();
 		}
+
 		save() {
 			if(this.selectedLoaction){
 				console.log('save location', this.selectedLoaction);
@@ -176,9 +174,7 @@ module itweet.category {
 			} else this.$scope.storageService.currentTweet.itemQs.trackPosition = null;
 			
 			this.$scope.navigationService.next();
-			
 		}
-		
 	}
 
 	angular.module('itweet.rhb.location', ['gettext', 'ui.router', 'ngMaterial'])

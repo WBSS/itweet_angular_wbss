@@ -21,7 +21,7 @@ module itweet.model {
         constructor(protected runner: ServiceFactory, retry: boolean = true) {
             super(runner, retry);
         }
-        
+
         getCategoryName(tweet: itweet.model.Tweet = this.runner.ItweetStorage.currentTweet): string {
             var token = itweet.model.Tweet.getCurrentContextToken(tweet, this.runner.ItweetStorage.user);
             if (token && this.runner.ItweetStorage.contextStore[token] && this.runner.ItweetStorage.contextStore[token].categories[tweet.refItemCategoryId]) {
@@ -30,6 +30,7 @@ module itweet.model {
                 return "undefined"
             }
         }
+
         getSubcategoryName(tweet: itweet.model.Tweet = this.runner.ItweetStorage.currentTweet): string {
             var token = itweet.model.Tweet.getCurrentContextToken(tweet, this.runner.ItweetStorage.user);
             if (token && this.runner.ItweetStorage.metdataStore[token] && this.runner.ItweetStorage.metdataStore[token].categoriesQs) {
@@ -69,7 +70,6 @@ module itweet.model {
                 this.responseData = this.runner.ItweetStorage.metdataStore[this.contextToken()] || {};
             }
         }
-
 
         run(currentLoading: angular.IDeferred<any> = this.runner.$q.defer()) {
             var token = this.contextToken();

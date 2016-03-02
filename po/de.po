@@ -53,11 +53,11 @@ msgstr "Beteiligte Personen überspringen"
 
 #: src/rhb/attributeInvolvedPersons/attributeInvolvedPersons.html:3
 msgid "attribute_involvedPersons_subtitle"
-msgstr "Erfassen aller am Ereignis beteiligten"
+msgstr "Personen erfassen"
 
 #: src/rhb/attributeInvolvedPersons/attributeInvolvedPersons.html:6
 msgid "attribute_involvedPersons_text"
-msgstr "Personen-ID oder Name eingeben:"
+msgstr "Personen-ID oder Name eingeben"
 
 #: src/rhb/attributeTime/attributeTime.html:43
 msgid "attribute_time_invalid_date"
@@ -69,7 +69,7 @@ msgstr "Erfassen Ereignisdatum/Zeit"
 
 #: build/ts.js:3546 src/overview/overview.html:73
 msgid "attribute_title_involvedPersons"
-msgstr "Beteiligte Personen"
+msgstr "Beteiligte"
 
 #: build/ts.js:3721 src/overview/overview.html:41
 msgid "attribute_title_time"
@@ -287,6 +287,9 @@ msgstr "Weiter ohne Text"
 msgid "message_subtitle"
 msgstr "Schreiben"
 
+msgid "message_placeholder"
+msgstr "Text*..."
+
 #: build/ts.js:1408 src/overview/overview.html:57
 msgid "message_title"
 msgstr "Text"
@@ -301,7 +304,7 @@ msgstr "Bitte wählen Sie eine Person aus."
 
 #: src/rhb/mydata/mydata.html:7
 msgid "mydata_login"
-msgstr "Personen-ID oder Name eingeben:"
+msgstr "Personen-ID oder Name eingeben"
 
 #: src/rhb/attributeInvolvedPersons/attributeInvolvedPersons.html:23
 #: src/rhb/attributeTrain/attributeTrain.html:24
@@ -462,15 +465,15 @@ msgstr "Fotos"
 
 #: src/rhb/location/location.html:7
 msgid "rhblocation_chooseLocation"
-msgstr "Bahnhof / Ort erfassen"
-
-#: src/rhb/location/location.html:44
-msgid "rhblocation_choosePosition"
-msgstr "Streckenkilometer erfassen"
+msgstr "Bahnhof / Ort"
 
 #: src/rhb/location/location.html:26
 msgid "rhblocation_chooseTrack"
-msgstr "Strecke erfassen"
+msgstr "Strecke"
+
+#: src/rhb/location/location.html:44
+msgid "rhblocation_choosePosition"
+msgstr "Streckenkilometer"
 
 #: build/ts.js:3255 build/ts.js:3561 build/ts.js:3810 build/ts.js:3812
 #: src/rhb/mydata/mydata.html:9
@@ -564,6 +567,12 @@ msgstr "Upload"
 #: build/ts.js:1761 build/ts.js:2572
 msgid "upload_status_tweet"
 msgstr "Information"
+
+msgid "lbl_info_file_mandatory_multi"
+msgstr "(Mindestens ein Feld ausfüllen*)"
+
+msgid "lbl_info_file_mandatory"
+msgstr "(Feld ausfüllen*)"
 
 #~ msgid "general_title_error"
 #~ msgstr "Fehler"
@@ -743,3 +752,4 @@ msgstr "Information"
 
 #~ msgid "item_saved_date"
 #~ msgstr "Erstellt"
+

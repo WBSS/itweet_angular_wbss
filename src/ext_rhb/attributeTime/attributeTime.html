@@ -10,19 +10,19 @@
 			<md-input-container flex="33">
 				<label translate>Tag</label>
 				<md-select ng-model="vm.newSelectDay">
-					<md-option ng-repeat="day in ::vm.timeDays" ng-value="{{::day}}">{{day}}</md-option>
+					<md-option ng-repeat="day in ::vm.timeDays" ng-value="::day"><span ng-bind="day"></span></md-option>
 				</md-select>
 			</md-input-container>
 			<md-input-container flex="33">
 				<label translate>Monat</label>
 				<md-select ng-model="vm.newSelectMonth">
-					<md-option ng-repeat="m1 in ::vm.timeMonths" ng-value="{{::$index}}">{{m1}}</md-option>
+					<md-option ng-repeat="m1 in ::vm.timeMonths" ng-value="::$index"><span ng-bind="m1"></md-option>
 				</md-select>
 			</md-input-container>
 			<md-input-container flex="33">
 				<label translate>Jahr</label>
 				<md-select ng-model="vm.newSelectYear">
-					<md-option ng-repeat="year in ::vm.timeYear" ng-value="{{::year}}">{{year}}</md-option>
+					<md-option ng-repeat="year in ::vm.timeYear" ng-value="::year"><span ng-bind="year"></md-option>
 				</md-select>
 			</md-input-container>
 		</div>
@@ -30,13 +30,13 @@
 			<md-input-container flex="33">
 				<label translate>Stunden</label>
 				<md-select ng-model="vm.newSelectHours">
-					<md-option ng-repeat="hours in ::vm.timeHours" ng-value="{{::$index}}">{{hours}}</md-option>
+					<md-option ng-repeat="hours in ::vm.timeHours" ng-value="::$index"><span ng-bind="hours"></md-option>
 				</md-select>
 			</md-input-container>
 			<md-input-container flex="33">
 				<label translate>Minuten</label>
 				<md-select ng-model="vm.newSelectMinutes">
-					<md-option ng-repeat="min in ::vm.timeMinutes" ng-value="{{::$index}}">{{min}}</md-option>
+					<md-option ng-repeat="min in ::vm.timeMinutes" ng-value="::$index"><span ng-bind="min"></span></md-option>
 				</md-select>
 			</md-input-container>
 		</div>

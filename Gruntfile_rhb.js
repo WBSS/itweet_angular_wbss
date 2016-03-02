@@ -23,8 +23,8 @@ var templateconfig = function (config) {
     appName: 'RhB',
     appID: 'rhbswiss',
     appPackage: 'ch.wbss.rhb.qs',
-    itweetURL: 'https://rhb.itweet.ch/mvc/mobile/rhb/1/',
-    appVersion: '0.8.1',
+    itweetURL: 'https://rhbapp.itweet.ch/mvc/mobile/rhb/1/',
+    appVersion: '0.8.2',
     splash: 'rhb_splash_logo.png',
     icon: 'icon_android.png',
     bgcolor: 'e6041b'
@@ -33,7 +33,7 @@ var templateconfig = function (config) {
     appID: 'rhbswiss',
     appPackage: 'ch.wbss.rhb.qs.uta',
     itweetURL: 'https://sandbox.itweet.ch/mvc/mobile/rhb/1/',
-    appVersion: '0.8.1',
+    appVersion: '0.8.2',
     splash: 'rhb_splash_logo.png',
     icon: 'icon_android.png',
     bgcolor: 'e6041b'
@@ -42,7 +42,7 @@ var templateconfig = function (config) {
     appID: 'rhbswiss',
     appPackage: 'ch.wbss.rhb.qs.dev',
     itweetURL: 'https://rhbappdev.itweet.ch/mvc/mobile/rhb/1/',
-    appVersion: '0.8.1',
+    appVersion: '0.8.2',
     splash: 'rhb_splash_logo.png',
     icon: 'icon_android.png',
     bgcolor: 'e6041b'

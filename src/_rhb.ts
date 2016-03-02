@@ -10,6 +10,7 @@
 /// <reference path='settings/help.ts' />
 /// <reference path='settings/disclaimer.ts' />
 /// <reference path='alltweets/alltweets.ts' />
+/// <reference path='ext_rhb/alltweets/alltweets.ts' />
 /// <reference path='mytweets/mytweets.ts' />
 /// <reference path='login/login.ts' />
 /// <reference path='app/app.ts' />
@@ -26,8 +27,6 @@
 /// <reference path="audio/audio.ts" />
 /// <reference path="overview/overview.ts" />
 /// <reference path="ext_rhb/overview/overview.ts" />
-
-
 
 /// <reference path='model/config.ts' />
 /// <reference path='model/model.ts' />

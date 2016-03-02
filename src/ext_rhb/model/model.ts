@@ -153,4 +153,3 @@ module itweet.model {
     }
 
 }
-

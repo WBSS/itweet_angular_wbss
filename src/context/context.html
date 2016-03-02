@@ -9,8 +9,7 @@
 				<!-- <div class="md-tile-content">-->
 				<md-button layout-fill role="button" tabIndex="{{$index}}" ng-click="vm.contextSelected(context)" md-highlight="vm.isSContextSelected(context)"
 				layout layout-align="center center">
-					<img ng-show="loaded" ng-src="{{context.urlIconContext}}" alt="{{context.displayname}}" class="contextListItemImage" ng-onload="loaded = true"
-					/>
+					<img ng-show="loaded" ng-src="{{context.urlIconContext}}" alt="{{context.displayname}}" class="contextListItemImage" ng-onload="loaded = true"/>
 					<div ng-hide="loaded"> {{context.displayname}}</div>
 				</md-button>
 			</md-item-content>

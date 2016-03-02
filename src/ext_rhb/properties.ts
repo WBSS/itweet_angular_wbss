@@ -7,7 +7,7 @@ app.angular_modules = ['gettext', 'ui.router', 'ngMaterial',
     'itweet.overview', 'itweet.navigation',
     'itweet.media',
     'itweet.menu',
-// rhb
+     // rhb
     'itweet.multicategory',
     'itweet.rhb.mydata',
     'itweet.rhb.location',

@@ -9,7 +9,7 @@
 			<ng-md-icon icon='folder_open' style="fill: white"></ng-md-icon>
 		</md-button>
         
-    	<h3 flex layout layout-align="center center" ng-bind="menu_parameters.title"></h3>
+    	<span flex layout layout-align="center center" ng-bind="menu_parameters.title"></span>
 		<img class="headerimage" ng-show="loaded && !navigationService.isCurrentStateOverview()"
                 ng-if="brand.getResponseData().urlIconLogo" ng-src="{{::brand.getResponseData().urlIconLogo}}"
                 ng-onload="loaded = true"/>

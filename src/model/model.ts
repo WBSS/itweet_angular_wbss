@@ -23,7 +23,6 @@ module itweet.model {
         loginToken: string
         showContext: boolean
     }
-    
     export class Category {
         id: number;
         name: string;

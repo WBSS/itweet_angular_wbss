@@ -7,7 +7,6 @@ module itweet.navigation {
         }
     }
 
-
     export class NavigationService {
 
         public static $inject = [
@@ -166,6 +165,7 @@ module itweet.navigation {
         goType(type: string) {
             this.go(this.defaultStateOrder[type](this,{}));
         }
+
         go(nextState: State = this.defaultStateOrder['default'](this,{}), replace: boolean = false) {
             this.$log.debug(" navigationService.go(" + JSON.stringify(nextState) + ")");
             if (!nextState) {
@@ -220,9 +220,11 @@ module itweet.navigation {
         shouldDisplayBackbutton(): boolean {
             return (((this._stateStack.length > 1) && !this.isCurrentStateOverview() && !this.isPreviousStateOverview()) || this.$state.current.name === 'app.mytweets' || this.$state.current.name === 'app.settings');
         }
+
         shouldDisplayAllMessages(): boolean {
             return !this.shouldDisplayBackbutton()
         }
+
         shouldShowNoNavigationButtons(): boolean {
             return false;
         }
