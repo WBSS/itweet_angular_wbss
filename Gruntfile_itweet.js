@@ -20,10 +20,10 @@ var templateconfig = function (config) {
 
   // app configuration (array of hash map)
   var platforms = [{
-    appName: 'iTweet',
+    appName: 'iTweet_Cloud',
     appID: 'itweet',
-    appPackage: 'ch.wbss.itweet',
-    itweetURL: 'https://cloud.itweet.ch/mvc/mobile/1/',
+    appPackage: 'ch.wbss.itweet.cloud',
+    itweetURL: 'https://www.itweet.ch/mvc/mobile/1/',
     appVersion: '0.8.2',
     splash: 'launch_image_2208_1242.png',
     icon: 'app_icon_180.png',
@@ -237,7 +237,7 @@ module.exports = function (grunt) {
     },
     // automatic concatenation of installed Bower components (https://www.npmjs.com/package/grunt-bower-concat)
     //----------------------------------//
-    bower_concat: {
+    /*bower_concat: {
       all: {
         dest: 'www/js/dist.js',
         cssDest: 'www/css/dist.css',
@@ -248,6 +248,28 @@ module.exports = function (grunt) {
         },
         dependencies: {
           'ng-clustered-map': 'angular'
+        }
+      }
+    },*/
+    bower_concat: {
+      all: {
+        dest: {
+          'js': 'www/js/dist.js',
+          'css': 'www/css/dist.css'
+        },
+        exclude: [
+          'angular-i18n',
+          'labjs'
+        ],
+        mainFiles: {
+          roboto: ['2014/roboto-woff.css'],
+          "ng-clustered-map": ['dist/ng-clustered-map.js']
+        },
+        dependencies: {
+          'ng-clustered-map': 'angular',
+        },
+        bowerOptions: {
+          relative: false
         }
       }
     },
@@ -335,7 +357,7 @@ module.exports = function (grunt) {
   grunt.registerTask('run-android_uta', ['template:uta_ch.wbss.itweet.uta','_clean_platform_android','_compile-and-run_android']);
   grunt.registerTask('run-android_dev', ['template:dev_ch.wbss.itweet.dev','_clean_platform_android','_compile-and-run_android']);
   // ios
-  grunt.registerTask('run-ios_prod', ['template:prod_ch.wbss.itweet','_clean_platform_ios','_compile-and-run_ios']);
+  grunt.registerTask('run-ios_prod', ['template:prod_ch.wbss.itweet.cloud','_clean_platform_ios','_compile-and-run_ios']);
   grunt.registerTask('run-ios_uta', ['template:uta_ch.wbss.itweet.uta','_clean_platform_ios','_compile-and-run_ios']);
   grunt.registerTask('run-ios_dev', ['template:dev_ch.wbss.itweet.dev','_clean_platform_ios','_compile-and-run_ios']);
 

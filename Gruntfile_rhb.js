@@ -221,17 +221,39 @@ module.exports = function (grunt) {
     },
     // automatic concatenation of installed Bower components (https://www.npmjs.com/package/grunt-bower-concat)
     //----------------------------------//
+    /*bower_concat: {
+     all: {
+     dest: 'www/js/dist.js',
+     cssDest: 'www/css/dist.css',
+     exclude: ['angular-i18n', 'labjs'],
+     mainFiles: {
+     roboto: ['2014/roboto-woff.css'],
+     "ng-clustered-map": ['dist/ng-clustered-map.js']
+     },
+     dependencies: {
+     'ng-clustered-map': 'angular'
+     }
+     }
+     },*/
     bower_concat: {
       all: {
-        dest: 'www/js/dist.js',
-        cssDest: 'www/css/dist.css',
-        exclude: ['angular-i18n', 'labjs'],
+        dest: {
+          'js': 'www/js/dist.js',
+          'css': 'www/css/dist.css'
+        },
+        exclude: [
+          'angular-i18n',
+          'labjs'
+        ],
         mainFiles: {
           roboto: ['2014/roboto-woff.css'],
           "ng-clustered-map": ['dist/ng-clustered-map.js']
         },
         dependencies: {
-          'ng-clustered-map': 'angular'
+          'ng-clustered-map': 'angular',
+        },
+        bowerOptions: {
+          relative: false
         }
       }
     },
@@ -275,6 +297,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-exec');
   grunt.loadNpmTasks('grunt-typescript');
   grunt.loadNpmTasks('grunt-contrib-symlink');
+  grunt.loadNpmTasks('grunt-bower-concat');
 
 
   // register tasks -------------------------------//
