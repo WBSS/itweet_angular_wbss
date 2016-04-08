@@ -396,7 +396,7 @@ msgstr "Sie haben noch kein Ereigniszeit festgelegt"
 
 #: src/overview/overview.1.html:79 src/overview/overview.html:92
 msgid "overview_label_train_placeholder"
-msgstr "Sie haben noch keine Zugdaten eingegeben"
+msgstr "Es sind keine Objektdaten (Zug-/Wagennummer) zugewiesen."
 
 #: src/overview/overview.1.html:4 src/overview/overview.html:4
 msgid "overview_subtitle"

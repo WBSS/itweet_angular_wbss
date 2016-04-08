@@ -48,9 +48,9 @@ module itweet.attributeTrain {
 				}
 			});
 			$scope.vm.searchTrainText = "";
-			$scope.vm.searchTrainPlaceholder = this.gettextCatalog.getString('Suchen*..');
+			$scope.vm.searchTrainPlaceholder = this.gettextCatalog.getString('Suchen..');
 			$scope.vm.searchVehicleText = "";
-			$scope.vm.searchVehiclePlaceholder = this.gettextCatalog.getString('Suchen*..');
+			$scope.vm.searchVehiclePlaceholder = this.gettextCatalog.getString('Suchen..');
 
 			//if(this.$scope.storageService.currentTweet.itemQs.refTrainId) $scope.vm.searchTrainText  = this.$scope.storageService.currentTweet.itemQs.refTrainId;
 			//if(this.$scope.storageService.currentTweet.itemQs.refWagonId) $scope.vm.searchVehicleText  = this.$scope.storageService.currentTweet.itemQs.refWagonId;

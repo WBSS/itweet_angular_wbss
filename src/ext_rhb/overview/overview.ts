@@ -3,11 +3,6 @@ module itweet.overview {
     export class RHBOverviewController extends OverviewController {
 
         validateTweet(currentTweet){
-            // screen text: not empty
-            // screen location: choose minimum one of location, track, trackposition
-            // screen categories: choose one (improve only static number) //[uk] ToDo for other categories!
-            // screen train: choose minimum one of train, wagon
-            //!currentTweet.itemQs.refLocationId
             if (this.isCatergoryIeadsProposal()) {
                 if (currentTweet.txt) {
                     return true;
@@ -18,8 +13,8 @@ module itweet.overview {
             {
                 if (currentTweet.txt
                     && (currentTweet.itemQs.refLocationId || currentTweet.itemQs.refTrackId || currentTweet.itemQs.trackPosition)
-                    && currentTweet.refItemCategoryId
-                    && (currentTweet.itemQs.refTrainId || currentTweet.itemQs.refWagonId)) {
+                    && currentTweet.refItemCategoryId){
+                    //&& (currentTweet.itemQs.refTrainId || currentTweet.itemQs.refWagonId)) {
                     return true;
                 }
                 return false;

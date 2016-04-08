@@ -1,7 +1,7 @@
 <ng-include src="'app/menu.html'"></ng-include>
 <md-content flex>
 	<md-subheader class="md-primary" style="{{::subheaderStyle}}">
-		<span translate>attribute_train_subheader</span>&nbsp;<span translate>lbl_info_file_mandatory_multi</span>
+		<span translate>attribute_train_subheader</span><!--&nbsp;<span translate>lbl_info_file_mandatory_multi</span>-->
 	</md-subheader>
 	<div ng-switch="vm.loaded" class="md-padding">
 		<div ng-switch-when="false" layout="row" layout-sm="column" layout-align="center center">
@@ -10,7 +10,7 @@
 		<form ng-switch-default name="inputForm" ng-submit="vm.save()">
 			<p translate>Zugnummer</p>
 			<md-autocomplete
-				md-selected-item="vm.selectedTrain"ß
+				md-selected-item="vm.selectedTrain"
 				md-search-text-change="vm.searchTextChange(vm.searchTrainText)"
 				md-search-text="vm.searchTrainText"
 				md-selected-item-change="vm.selectedTrainChange(train)"
