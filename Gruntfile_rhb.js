@@ -358,16 +358,16 @@ module.exports = function (grunt) {
   // sign android apk
   grunt.registerTask('sig_android_apk-file', ['exec:signer_android']);
   // build&sign to folder platform (cordova android)
-  grunt.registerTask('build_sign-android_release_prod', ['template:prod_ch.wbss.rhb.qs', '_compile-and-sign_android_release']);
-  grunt.registerTask('build_sign-android_release_uta', ['template:uta_ch.wbss.rhb.qs.uta', '_compile-and-sign_android_release']);
-  grunt.registerTask('build_sign-android_release_dev', ['template:dev_ch.wbss.rhb.qs.dev', '_compile-and-sign_android_release']);
+  grunt.registerTask('build_sign-android_release_prod', ['template:prod_ch.wbss.rhb.qs','_clean_platform_android','_compile-and-sign_android_release']);
+  grunt.registerTask('build_sign-android_release_uta', ['template:uta_ch.wbss.rhb.qs.uta','_clean_platform_android', '_compile-and-sign_android_release']);
+  grunt.registerTask('build_sign-android_release_dev', ['template:dev_ch.wbss.rhb.qs.dev','_clean_platform_android','_compile-and-sign_android_release']);
 
   // build&sign to folder platform (cordova ios)
   // compile&sign android apk
   grunt.registerTask('_compile-and-build_ios_release', ['_prepare', 'exec:builder_ios_release']);
-  grunt.registerTask('build_ios_release_prod', ['template:prod_ch.wbss.rhb.qs', '_compile-and-build_ios_release']);
-  grunt.registerTask('build_ios_release_uta', ['template:uta_ch.wbss.rhb.qs.uta', '_compile-and-build_ios_release']);
-  grunt.registerTask('build_ios_release_dev', ['template:dev_ch.wbss.rhb.qs.dev', '_compile-and-build_ios_release']);
+  grunt.registerTask('build_ios_release_prod', ['template:prod_ch.wbss.rhb.qs','_clean_platform_ios','_compile-and-build_ios_release']);
+  grunt.registerTask('build_ios_release_uta', ['template:uta_ch.wbss.rhb.qs.uta','_clean_platform_ios','_compile-and-build_ios_release']);
+  grunt.registerTask('build_ios_release_dev', ['template:dev_ch.wbss.rhb.qs.dev','_clean_platform_ios','_compile-and-build_ios_release']);
 
 
 
