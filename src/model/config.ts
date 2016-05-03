@@ -1,4 +1,4 @@
-/// <reference path='../_all.ts' />
+
 declare var device:any;
 
 module itweet.model {

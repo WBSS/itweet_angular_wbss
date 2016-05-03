@@ -1,5 +1,3 @@
-/// <reference path='../_all.ts' />
-
 module itweet.model {
     export interface MediaStorageElement {
         sha1: string;

@@ -1,5 +1,3 @@
-/// <reference path='../_all.ts' />
-
 module itweet {
 
 	/**
@@ -16,6 +14,7 @@ module itweet {
 		brand: itweet.model.BasicService<any>;
 		subheaderStyle: string;
 		footerStyle: string;
+		startWatchGeoPosition: any;
 	}
 	export class AppController {
 
@@ -52,6 +51,10 @@ module itweet {
 			$scope.$watch(() => { return iTweetNetwork.brandService.getFooterStyle() }, (data) => {
 				$scope.footerStyle = data
 			})
+
+			//watch geo position
+			$scope.startWatchGeoPosition();
+
 		}
 	}
 
@@ -68,7 +71,29 @@ module itweet {
 						});
 
 				}
-			]);;
+			])
+		.run(function($rootScope, $cordovaGeolocation) {
+				$rootScope.startWatchGeoPosition = function() {
 
+					var watchOptions = {
+					 timeout : 30000,
+					 enableHighAccuracy: true // may cause errors if true
+					 };
+					 var watch = $cordovaGeolocation.watchPosition(watchOptions);
+					 watch.then(
+					 null,
+					 function(err) {
+						 console.log('geo position: error: ' + err.message);
+						 $rootScope.errorGeoLocation = err.message;
+
+					 },
+					 function(position) {
+					 $rootScope.position = position
+					 });
+					 console.log('geo position: start watch');
+				}
+
+
+				});
 
 }

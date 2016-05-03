@@ -1,5 +1,3 @@
-/// <reference path='../_all.ts' />
-
 module itweet.audio {
 
 	export interface AudioControllerScope extends itweet.AppControllerScope{

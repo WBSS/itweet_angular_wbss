@@ -1,4 +1,3 @@
-/// <reference path='../_all.ts' />
 module itweet.model {
     //export enum MediaStates {start, recording, recorded, playback, paused, stopped }
 

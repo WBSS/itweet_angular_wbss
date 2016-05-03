@@ -1,5 +1,3 @@
-/// <reference path='../_all.ts' />
-
 module  itweet.model {
     export class StorageService {
         public static mimeTypeFromExt = {

@@ -1,5 +1,3 @@
-/// <reference path='../../_all.ts' />
-
 module itweet.category {
 
 	export interface MultiCategoryControllerScope extends itweet.AppControllerScope {
@@ -79,7 +77,7 @@ module itweet.category {
 						});
 
 				}
-			]);;
+			]);
 
 
 }

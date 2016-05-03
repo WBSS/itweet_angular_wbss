@@ -1,6 +1,4 @@
-/// <reference path='../../_all.ts' />
-
-module itweet.category {
+module itweet.mydata {
 
 	export interface RhbMydataControllerScope extends itweet.AppControllerScope {
 		vm: RhBMydataController;

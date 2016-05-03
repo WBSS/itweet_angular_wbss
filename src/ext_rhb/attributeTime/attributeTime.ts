@@ -1,5 +1,3 @@
-/// <reference path='../../_all.ts' />
-
 module itweet.attributeTime {
 
 	export interface RhBAttributeTimeControllerScope extends itweet.AppControllerScope{

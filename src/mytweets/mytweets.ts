@@ -1,5 +1,3 @@
-/// <reference path='../_all.ts' />
-
 module itweet.mytweets {
 
 	export interface MyTweetsControllerScope extends itweet.AppControllerScope{

@@ -1,5 +1,3 @@
-/// <reference path='../_all.ts' />
-
 module itweet.context {
 
 	export interface ContextControllerScope extends itweet.AppControllerScope{

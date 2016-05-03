@@ -1,6 +1,4 @@
-/// <reference path='../../_all.ts' />
-
-module itweet.category {
+module itweet.location{
 
 	export interface RhbLocationControllerScope extends itweet.AppControllerScope {
 		vm: RhbLocationController;

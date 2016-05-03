@@ -1,5 +1,3 @@
-/// <reference path='../../_all.ts' />
-
 module itweet.attributeInvolvedPersons {
 
 	export interface RhBAttributeInvolvedPersonsControllerScope extends itweet.AppControllerScope{

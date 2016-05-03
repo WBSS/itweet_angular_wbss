@@ -1,4 +1,3 @@
-/// <reference path='../../_all.ts' />
 module itweet.model {
 	
     export class RHBServiceFactory extends ServiceFactory {

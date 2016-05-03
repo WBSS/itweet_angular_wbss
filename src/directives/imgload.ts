@@ -1,4 +1,3 @@
-/// <reference path='../_all.ts' />
 module itweet {
 
 /* jshint esnext: true, node: true */

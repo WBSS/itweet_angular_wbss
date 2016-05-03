@@ -1,5 +1,3 @@
-/// <reference path='../../_all.ts' />
-
 module itweet.attributeTrain {
 
 	export interface RhBAttributeTrainControllerScope extends itweet.AppControllerScope{
